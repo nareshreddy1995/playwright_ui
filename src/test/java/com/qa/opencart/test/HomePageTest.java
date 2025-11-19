@@ -10,7 +10,7 @@ public class HomePageTest extends BaseTest {
 	@org.testng.annotations.Test
 	public void homePageTest() {
 		String actualTitle = homePage.getHomePageTitle();
-		Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actualTitle, AppConstants.HOME_PAGE_TITLE);
 
 	}
 
