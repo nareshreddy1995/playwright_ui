@@ -1,38 +1,39 @@
 package com.qa.opencart.test;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 
 public class HomePageTest extends BaseTest {
 
-	@org.testng.annotations.Test
+	@Test(priority = 1)
 	public void homePageTest() {
 		String actualTitle = homePage.getHomePageTitle();
 		Assert.assertEquals(actualTitle, AppConstants.HOME_PAGE_TITLE);
 
 	}
 
-	@org.testng.annotations.Test
+	@Test(priority = 2)
 	public void homepageURLTest() {
 		String actualpageUrl = homePage.HomePageUrl();
-		Assert.assertEquals(actualpageUrl,prop.getProperty("url"));
+		Assert.assertEquals(actualpageUrl, prop.getProperty("url"));
 	}
 
+	@DataProvider(name = "getproductData")
 	public Object[][] getproductData() {
-		return new Object[][] {
-
-				{ "Macbook" }, { "oneplus" }, { "Samsung" }
-
-		};
+		return new Object[][] { { "Macbook" }, { "iPhone" }, { "Samsung" } };
 	}
 
-	@org.testng.annotations.Test(dataProvider = "getproductData")
-	public void searchTest() {
+	@Test(dataProvider = "getproductData", priority = 3)
+	public void searchTest(String productName) {
+
+		System.out.println("Searching for: " + productName);
 
 		String actualSearchHeader = homePage.doSearch("Macbook");
-		Assert.assertEquals(actualSearchHeader, "Search - mac book");
+		Assert.assertEquals(actualSearchHeader, "Search - Macbook");
 	}
 
 }

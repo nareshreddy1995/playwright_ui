@@ -12,7 +12,7 @@ public class LoginPage {
 	private String password = "//input[@id='input-password']";
 	private String loginBtn = "//input[@type='submit']";
 	private String forgotpwdLink = "(//a[text()='Forgotten Password'])[1]";
-	private String logoutLink = "//a[@class='list-group-item']]normalize-space()='Logout']";
+	private String logoutLink = "//a[@class='list-group-item' and normalize-space()='Logout']";
 
 	// 2.page constructor
 

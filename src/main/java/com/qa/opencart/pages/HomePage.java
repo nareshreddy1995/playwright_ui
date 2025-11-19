@@ -9,7 +9,7 @@ public class HomePage {
 	// 1. Locators..
 
 	private String search = "input[name='search']";
-	private String searchIcon = "div#search button";
+	private String searchIcon = "//span[@class='input-group-btn']/button";
 	private String searchpaheHeader = "div#content h1";
 	private String loginLink = "//a[text()='Login']";
 	private String myAccountLink = "//span[text()='My Account']";
@@ -42,8 +42,8 @@ public class HomePage {
 
 	public String doSearch(String productName) {
 
-		page.fill(searchIcon, productName);
-		page.click(productName);
+		page.fill(search, productName);
+		page.click(searchIcon);
 		String header = page.textContent(searchpaheHeader);
 		System.out.println("Search Header :" + header);
 		return header;

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 18 10:00:00 IST 2025</td>
+<td>Started on:</td><td>Wed Nov 19 15:49:20 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>250 seconds (250585 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11840 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,337 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.opencart.test.HomePageTest.setUp()'><b>setUp</b><br>Test class: com.qa.opencart.test.HomePageTest</td>
-<td><div><pre>java.lang.RuntimeException: Failed to create driver
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
-	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
-	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:46)
-	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:36)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:110)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:114)
-	at com.qa.Factory.opencart.PlaywrightFactory.initBrowser(PlaywrightFactory.java:18)
-	at com.qa.opencart.test.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:99)
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:68)
-	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace131206411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace131206411'><pre>java.lang.RuntimeException: Failed to create driver
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
-	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
-	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:46)
-	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:36)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:110)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:114)
-	at com.qa.Factory.opencart.PlaywrightFactory.initBrowser(PlaywrightFactory.java:18)
-	at com.qa.opencart.test.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:99)
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:68)
-	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
-	... 29 more
-</pre></div></td>
-<td>250</td>
-<td>com.qa.opencart.test.HomePageTest@799f10e1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.opencart.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.qa.opencart.test.HomePageTest</td>
+<td title='com.qa.opencart.test.LoginPageTest.loginPageNavigationTest()'><b>loginPageNavigationTest</b><br>Test class: com.qa.opencart.test.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.qa.opencart.test.HomePageTest@799f10e1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.qa.opencart.test.LoginPageTest@4c371370</td></tr>
 <tr>
-<td title='com.qa.opencart.test.HomePageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.opencart.test.HomePageTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Method public void com.qa.opencart.test.HomePageTest.searchTest() requires a @DataProvider named : getproductData
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace52514534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace52514534'><pre>org.testng.TestNGException: 
-Method public void com.qa.opencart.test.HomePageTest.searchTest() requires a @DataProvider named : getproductData
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:532)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
+<td title='com.qa.opencart.test.LoginPageTest.appLoginTest()'><b>appLoginTest</b><br>Test class: com.qa.opencart.test.LoginPageTest</td>
+<td></td>
 <td>0</td>
-<td>com.qa.opencart.test.HomePageTest@799f10e1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.qa.opencart.test.LoginPageTest@4c371370</td></tr>
 <tr>
-<td title='com.qa.opencart.test.HomePageTest.homePageTest()'><b>homePageTest</b><br>Test class: com.qa.opencart.test.HomePageTest</td>
-<td><div><pre>java.lang.RuntimeException: Failed to create driver
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
-	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
-	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:46)
-	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:36)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:110)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:114)
-	at com.qa.Factory.opencart.PlaywrightFactory.initBrowser(PlaywrightFactory.java:18)
-	at com.qa.opencart.test.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:99)
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:68)
-	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2133655103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2133655103'><pre>java.lang.RuntimeException: Failed to create driver
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
-	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
-	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:46)
-	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:36)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:110)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:114)
-	at com.qa.Factory.opencart.PlaywrightFactory.initBrowser(PlaywrightFactory.java:18)
-	at com.qa.opencart.test.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:99)
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:68)
-	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
-	... 29 more
-</pre></div></td>
+<td title='com.qa.opencart.test.LoginPageTest.forgotPwdLinkExistTest()'><b>forgotPwdLinkExistTest</b><br>Test class: com.qa.opencart.test.LoginPageTest</td>
+<td></td>
 <td>0</td>
-<td>com.qa.opencart.test.HomePageTest@799f10e1</td></tr>
-<tr>
-<td title='com.qa.opencart.test.HomePageTest.homepageURLTest()'><b>homepageURLTest</b><br>Test class: com.qa.opencart.test.HomePageTest</td>
-<td><div><pre>java.lang.RuntimeException: Failed to create driver
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
-	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
-	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:46)
-	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:36)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:110)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:114)
-	at com.qa.Factory.opencart.PlaywrightFactory.initBrowser(PlaywrightFactory.java:18)
-	at com.qa.opencart.test.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:99)
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:68)
-	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1345900725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1345900725'><pre>java.lang.RuntimeException: Failed to create driver
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)
-	at com.microsoft.playwright.impl.driver.Driver.ensureDriverInstalled(Driver.java:57)
-	at com.microsoft.playwright.impl.PlaywrightImpl.createImpl(PlaywrightImpl.java:46)
-	at com.microsoft.playwright.impl.PlaywrightImpl.create(PlaywrightImpl.java:36)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:110)
-	at com.microsoft.playwright.Playwright.create(Playwright.java:114)
-	at com.qa.Factory.opencart.PlaywrightFactory.initBrowser(PlaywrightFactory.java:18)
-	at com.qa.opencart.test.HomePageTest.setUp(HomePageTest.java:23)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: Failed to install browsers, exit code: 1
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.installBrowsers(DriverJar.java:99)
-	at com.microsoft.playwright.impl.driver.jar.DriverJar.initialize(DriverJar.java:68)
-	at com.microsoft.playwright.impl.driver.Driver.initialize(Driver.java:64)
-	at com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:101)
-	... 29 more
-</pre></div></td>
-<td>0</td>
-<td>com.qa.opencart.test.HomePageTest@799f10e1</td></tr>
+<td>com.qa.opencart.test.LoginPageTest@4c371370</td></tr>
 </table><p>
 </body>
 </html>

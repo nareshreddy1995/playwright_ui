@@ -45,47 +45,39 @@ public class PlaywrightFactory {
 		String browserName = prop.getProperty("browser").trim();
 
 		tlplaywright.set(Playwright.create());
-		// playwright = Playwright.create();
 
 		switch (browserName.toLowerCase()) {
 		case "chromium":
-			// playwright.chromium().launch(new
-			// BrowserType.LaunchOptions().setHeadless(false));
-			tlbrowser.set(playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tlbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
 			break;
 
 		case "firefox":
-			// playwright.firefox().launch(new
-			// BrowserType.LaunchOptions().setHeadless(false));
-			tlbrowser.set(playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
-
+			tlbrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
 			break;
 
 		case "safari":
-			// playwright.webkit().launch(new
-			// BrowserType.LaunchOptions().setHeadless(false));
-			tlbrowser.set(playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false)));
-
+			tlbrowser.set(getPlaywright().webkit().launch(new BrowserType.LaunchOptions().setHeadless(false)));
 			break;
 
 		case "chrome":
-			// playwright.chromium().launch(new
-			// BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
-			tlbrowser.set(playwright.chromium()
+			tlbrowser.set(getPlaywright().chromium()
 					.launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false)));
-
 			break;
 
 		default:
-
 			System.out.println("please pass the correct browser name...");
 			break;
 		}
 
 		tlbrowserContext.set(getBrowser().newContext());
 		tlpage.set(getBrowserContext().newPage());
-		getPage().navigate(prop.getProperty("url").trim());
-		return page;
+
+		// 🔥 FIX: assign to actual instance variable
+		this.page = getPage();
+
+		this.page.navigate(prop.getProperty("url").trim());
+
+		return this.page;
 
 //		browserContext = browser.newContext();
 //		page = browserContext.newPage();
