@@ -1,11 +1,14 @@
 package com.qa.opencart.test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.qa.opencart.Listeners.TestListener;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 
+@Listeners(TestListener.class)
 public class LoginPageTest extends BaseTest {
 
 	@Test(priority = 1)
